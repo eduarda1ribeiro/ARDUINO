@@ -1,0 +1,55 @@
+https://www.tinkercad.com/things/3Hz1KYdRngX-smooth-snaget/editel?returnTo=%2Fdashboard
+
+
+                                       CÓDIGO
+// C++ code
+//
+void setup()
+{
+  pinMode(10, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(8, OUTPUT);
+  pinMode(2, OUTPUT);//outros
+  pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(10, HIGH);//VERMELHO
+  digitalWrite(9, LOW);//VERDE
+  digitalWrite(8, LOW);//
+  digitalWrite(2, LOW);//VERMELHO2
+  digitalWrite(3, LOW);//AMARELO2
+  digitalWrite(4, HIGH);//VERDE2
+  delay(3000); // Wait dor 1000 millisecond (s)
+  
+  digitalWrite(10, HIGH);//VERMELHO1
+  digitalWrite(9, LOW);//VERDE1
+  digitalWrite(8, LOW);//AMARELO1
+  digitalWrite(2, LOW);//VERMELHO2
+  digitalWrite(3, HIGH);//AMARELO2
+  digitalWrite(4, LOW);//VERDE2
+  delay(3000); // Wait dor 1000 millisecond (s)
+  
+  digitalWrite(10, LOW);
+  digitalWrite(9, HIGH);
+  digitalWrite(8, LOW);
+  digitalWrite(2, HIGH);//VERMLHO2
+  digitalWrite(3, LOW);//AMARELO2
+  digitalWrite(4, LOW);//VERDE2
+  delay(3000); // Wait dor 1000 millisecond (s)  
+  
+  digitalWrite(10, LOW);
+  digitalWrite(9, LOW);
+  digitalWrite(8, HIGH);
+  digitalWrite(2, HIGH);//VERMLHO2
+  digitalWrite(3, LOW);//AMARELO2
+  digitalWrite(4, LOW);//VERDE2
+  delay(3000); // Wait dor 1000 millisecond (s) 
+  
+  // VERMELHO VERDE
+  // VERMELHO AMARELO
+  // VERDE VERMELHO
+  // AMARELO VERMELHO
+}
