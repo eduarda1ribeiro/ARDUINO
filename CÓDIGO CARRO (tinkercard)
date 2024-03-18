@@ -1,0 +1,38 @@
+CÓDIGO
+const int btn1 = 0;
+int cond = 0;
+
+void setup()
+{
+  pinMode(7, OUTPUT);//SETA DA FRENTE DIREITA
+  pinMode(6, OUTPUT);//SETA DA FRENTE ESQUERDA
+  pinMode(12, OUTPUT);//SETA TRASEIRA
+  pinMode(13, OUTPUT);//SETA TRASEIREA
+  pinMode(btn1, INPUT);
+  
+}
+
+void loop()
+{
+  cond = digitalRead(btn1);
+  
+  if (btn1 == LOW){
+  
+  digitalWrite(7, HIGH);
+  digitalWrite(6, LOW);
+  digitalWrite(12, LOW);
+  digitalWrite(13, HIGH);
+  delay(610); // Wait for 1000 millisecond(s)
+  }
+   
+  cond = digitalRead(btn1);
+ 
+  if (btn1 == LOW) {
+  
+  digitalWrite(7, LOW);
+  digitalWrite(6, HIGH);
+  digitalWrite(12, HIGH);
+  digitalWrite(13,LOW);
+  delay(610); // Wait for 1000 millisecond(s)
+}
+ }
